@@ -1,20 +1,27 @@
 const { ensureLogo } = require('./scripts/generate-logo');
 
-ensureLogo();
+// Generate logo at config time - safe for Vercel since we catch errors
+try {
+  ensureLogo();
+} catch (e) {
+  // Logo already exists or write failed - continue anyway
+}
+
+const logoPath = './assets/generated/violetflixtv-logo.png';
 
 module.exports = ({ config }) => ({
   ...config,
-  icon: './assets/generated/violetflixtv-logo.png',
+  icon: logoPath,
   android: {
     ...config.android,
     adaptiveIcon: {
       ...config.android?.adaptiveIcon,
-      foregroundImage: './assets/generated/violetflixtv-logo.png',
+      foregroundImage: logoPath,
     },
   },
   web: {
     ...config.web,
-    favicon: './assets/generated/violetflixtv-logo.png',
+    favicon: logoPath,
   },
   plugins: config.plugins?.map((plugin) => {
     if (Array.isArray(plugin) && plugin[0] === 'expo-splash-screen') {
@@ -22,7 +29,7 @@ module.exports = ({ config }) => ({
         plugin[0],
         {
           ...plugin[1],
-          image: './assets/generated/violetflixtv-logo.png',
+          image: logoPath,
         },
       ];
     }
