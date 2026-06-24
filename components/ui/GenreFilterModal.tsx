@@ -114,7 +114,7 @@ export function GenreFilterModal({ visible, onClose, type, currentFilters, onApp
         <View style={styles.sheet}>
           {/* Header */}
           <View style={styles.sheetHeader}>
-            <Text style={styles.sheetTitle}>Filter & Sort</Text>
+            <Text style={styles.sheetTitle}>Filter &amp; Sort</Text>
             <View style={styles.sheetActions}>
               <Pressable onPress={handleReset} style={styles.resetBtn}>
                 <Text style={styles.resetText}>Reset</Text>
