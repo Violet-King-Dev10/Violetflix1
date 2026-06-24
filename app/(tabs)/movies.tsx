@@ -42,7 +42,7 @@ export default function MoviesScreen() {
       <View style={styles.header}>
         <View>
           <Text style={styles.headerTitle}>Movies</Text>
-          <Text style={styles.headerSub}>Discover & Stream</Text>
+          <Text style={styles.headerSub}>Discover &amp; Stream</Text>
         </View>
         <Pressable
           style={({ pressed }) => [styles.filterBtn, activeCount > 0 && styles.filterBtnActive, pressed && { opacity: 0.7 }]}

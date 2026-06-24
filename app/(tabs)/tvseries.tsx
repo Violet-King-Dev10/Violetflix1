@@ -100,7 +100,7 @@ export default function TVSeriesScreen() {
       <View style={styles.header}>
         <View>
           <Text style={styles.headerTitle}>TV Series</Text>
-          <Text style={styles.headerSub}>Ongoing & Classic Shows</Text>
+          <Text style={styles.headerSub}>Ongoing &amp; Classic Shows</Text>
         </View>
         <Pressable
           style={({ pressed }) => [styles.filterBtn, activeCount > 0 && styles.filterBtnActive, pressed && { opacity: 0.7 }]}

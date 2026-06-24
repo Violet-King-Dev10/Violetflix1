@@ -38,7 +38,7 @@ export default function AnimeScreen() {
       <View style={styles.header}>
         <View>
           <Text style={styles.headerTitle}>Anime</Text>
-          <Text style={styles.headerSub}>Stream & Download</Text>
+          <Text style={styles.headerSub}>Stream &amp; Download</Text>
         </View>
         <Pressable
           style={({ pressed }) => [styles.filterBtn, activeCount > 0 && styles.filterBtnActive, pressed && { opacity: 0.7 }]}

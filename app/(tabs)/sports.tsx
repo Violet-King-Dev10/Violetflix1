@@ -98,7 +98,7 @@ export default function SportsScreen() {
         </Pressable>
         <View style={styles.headerTextWrap}>
           <Text style={styles.headerTitle}>Sports</Text>
-          <Text style={styles.headerSub}>Live matches, tables & streams</Text>
+          <Text style={styles.headerSub}>Live matches, tables &amp; streams</Text>
         </View>
         <Pressable
           accessibilityLabel="Refresh sports"
@@ -147,7 +147,7 @@ export default function SportsScreen() {
 
       <ScrollView contentContainerStyle={styles.content} showsVerticalScrollIndicator={false}>
         <View style={styles.sectionHeader}>
-          <Text style={styles.sectionTitle}>Live & Upcoming</Text>
+          <Text style={styles.sectionTitle}>Live &amp; Upcoming</Text>
           <Text style={styles.sectionMeta}>{searchQuery ? `search: ${searchQuery}` : `${matches.length} matches`}</Text>
         </View>
 
