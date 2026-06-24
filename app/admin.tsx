@@ -257,7 +257,7 @@ export default function AdminScreen() {
                   <Text style={styles.refreshText}>Refresh Stats</Text>
                 </Pressable>
 
-                <Text style={styles.sectionTitle}>Streaming & Download Analysis</Text>
+                <Text style={styles.sectionTitle}>Streaming &amp; Download Analysis</Text>
                 <View style={styles.analysisGrid}>
                   <View style={styles.analysisCard}>
                     <View style={styles.analysisHeader}>

@@ -72,7 +72,7 @@ export default function LoginScreen() {
             <Text style={styles.logoBrand}>VioletFlix</Text>
             <Text style={styles.logoAccent}>TV</Text>
           </Text>
-          <Text style={styles.logoSub.*Movies, Anime & Series</Text>
+          <Text style={styles.logoSub}>Movies, Anime &amp; Series</Text>
         </View>
 
         {/* Card */}
@@ -107,7 +107,7 @@ export default function LoginScreen() {
                 disabled={operationLoading}
               >
                 {operationLoading ? <ActivityIndicator color="#fff" /> : (
-                  <Text style={styles.primaryBtnText}>Verify & Create Account</Text>
+                  <Text style={styles.primaryBtnText}>Verify &amp; Create Account</Text>
                 )}
               </Pressable>
               <Pressable onPress={() => setMode('register')} style={styles.linkBtn}>
